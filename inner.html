@@ -21,7 +21,55 @@
 	<main class="container">
 		<section class="filters">
 			<h2 class="visually_hidden">Фильтр</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Инфрастуктура:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="pool" id="filter_pool" checked>
+							<label for="filter_pool">Бассейн</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="parking" id="filter_parking">
+							<label for="filter_parking">Парковка</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="wifi" id="filter_wifi">
+							<label for="filter_wifi">Wi-Fi</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="hotel" id="filter_hotel" checked>
+							<label for="filter_hotel">Гостиница</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="motel" id="filter_motel" checked>
+							<label for="filter_motel">Мотель</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="apartment" id="filter_apartment" checked>
+							<label for="filter_apartment">Апартаменты</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Стоимость в сутки (Р): 
+						<output name="cost"></output>
+					</legend>
+					<div class="filter_price">
+						<label class="filter_price_from">От <input type="number" name="price_from">0</label>
+						<label class="filter_price_to">До <input type="number" name="price_to">3000</label>
+					</div>
+					<div class="cost-range">
+					<!-- Пока не размечаем - как его размечать покажут в скринкасте -->
+					</div>
+					<button type="submit" class="filter_button button">Показать</button>
+				</fieldset>			                
+			</form>
 		</section>
 		<section class="sort">
 			<h2 class="visually_hidden">Сортировка</h2>
