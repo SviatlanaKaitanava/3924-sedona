@@ -93,6 +93,33 @@
 			<p class="text_grand">Заинтересовались?</p>
 			<p class="text_small">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<button class="modal_close" type="button">Поиск гостиницы в Седоне</button>
+			<form class="search_hotel_form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="search_hotel_item">
+					<label for="search_hotel_date_arrival">Дата заезда</label>
+					<input id="search_hotel_date_arrival" type="date" name="date_arrival">
+					<button type="button" name="img_date_arrival"><img src="img/calendar.svg" alt="Выбрать дату заезда"></button>				
+				</div>
+				<div class="search_hotel_item">
+					<label for="search_hotel_date_departure">Дата выезда</label>
+					<input id="search_hotel_date_departure" type="date" name="date_departure">
+					<button type="button" name="img_date_departure"><img src="img/calendar.svg" alt="Выбрать дату выезда"></button>					
+				</div>
+				<div class="search_hotel_item">
+					<label for="number_adults" class="search_hotel_number_adults">Взрослые: </label>
+					<div class="number_persons">
+						<button type="button">-</button>
+						<input id="number_adults" type="number" name="number_adults" placeholder="2" min="0">
+						<button type="button">+</button>
+					</div>
+					<label for="number_children" class="search_hotel_number_children">Дети: </label>
+					<div class="number_persons">
+						<button type="button">-</button>
+						<input  id="number_children" type="number" name="number_children" placeholder="0" min="0">
+						<button type="button">+</button>
+					</div>					
+				</div>
+				<button class="button" type="submit">Найти</button>
+			</form>		
 		</section>
 		<div class="maps">
 			<p class="visually_hidden">Седона на карте</p>
@@ -110,24 +137,6 @@
 			<span class="text_small">website by</span>
 			<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип академии"></a>
 		</p>
-	</footer>
-	<section class="modal modal_hotel_search">
-		<h2 class="visually_hidden">Поиск гостиц</h2>
-		<form class="search_hotel_form" action="https://echo.htmlacademy.ru" method="post">
-			<p class="search_hotel_item">
-				<label for="search_hotel_date_arrival">Дата заезда</label>
-				<input id="search_hotel_date_arrival" type="date" name="date_arrival">
-			</p>
-			<p class="search_hotel_item">
-				<label for="search_hotel_date_departure">Дата выезда</label>
-				<input id="search_hotel_date_departure" type="date" name="date_departure">
-			</p>
-			<p class="search_hotel_item">
-				<label class="search_hotel_number_adults">Взрослые <input type="number" name="number_adults" placeholder="2" min="0"></label>				
-				<label class="search_hotel_number_children">Дети <input  type="number" name="number_children" placeholder="0" min="0"></label>				
-			</p>
-			<button class="button" type="submit">Найти</button>
-		</form>		
-    </section>
+	</footer>	
   </body>
 </html>
