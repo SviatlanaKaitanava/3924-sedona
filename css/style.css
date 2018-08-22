@@ -1,0 +1,235 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+	text-transform: uppercase;
+  	
+	background-color:#f2f2f2;
+}
+a {
+	text-decoration: none;
+}
+.main_navigation{
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	
+	background-color:#ffffff;
+}
+
+.container_index{
+	background-image: url("../img/big_img_sedona.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.reason{
+	background-color:#ffffff;
+}
+.gray_block{
+	background-color:#eeeeee;
+}
+
+.site_navigation,
+.reason_list,
+.infrastructure,
+.footer_social,
+.catalog_list,
+.filter ul{
+	list-style: none;
+}
+.site_navigation a,
+.catalog_list a{
+	color:#000000;
+}
+.site_navigation a:hover,
+.site_navigation a:focus,
+.hotel_name a:hover,
+.hotel_name a:focus{
+	color:#81b3d2;
+}
+.sort_type{
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;	
+}
+.sort_type a{
+	color:#000000;
+}
+.text_sort:hover,
+.text_sort:focus,
+.sort_type a:first-of-type{
+	color:#81b3d2;
+	border-bottom: 1px dotted #81b3d2;
+}
+.welcom{
+	height:353px;
+	background-image: url("../img/intro-welcome.svg");		
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: auto;
+}
+.head_reason{
+	background-color:#ffffff;
+}
+.head_reason .text_big{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color:#000000;
+	text-align:center;
+}
+.head_reason .text_small{
+	line-height: 26px;
+	text-align:center;
+}
+.feature{
+	text-align:center;
+}
+.feature .text_big{
+	font-size: 21px;
+	color:#000000;
+}
+.hotel_search p, .maps{
+	text-align:center;
+}
+.hotel_search  .text_grand{
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	color:#000000;
+	
+}
+.reason_item_motive .feature {
+	color:#ffffff;
+	background-color:#81b3d2;
+}
+.reason_item_motive .feature .text_big{
+	color:#ffffff;
+}
+.hotel_search .modal_close{
+	font: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color:#ffffff;
+	text-align:center;
+	background-color:#766357;
+	text-transform: uppercase;
+	border: none;
+}
+.hotel_search .modal_close:hover,
+.hotel_search .modal_close:focus,
+.hotel_info .book:hover,
+.hotel_info .book:focus{
+	background-color:#604e43;
+}
+.hotel_search .modal_close:active,
+.hotel_info .book:active{
+	background-color:#503e33;
+	color:rgba(255, 255, 255, 0.5);
+}
+.search_hotel_form{
+	line-height: 26px;
+	font-weight: 700;
+	color:#000000;
+}
+.search_hotel_form input{
+	border:none;
+	text-align:center;
+}
+.search_hotel_form input:hover{
+	background-color:#ebebeb;
+	border:none;
+}
+.search_hotel_form input:focus{
+	background-color:#ffffff;
+	border-color:#eeeeee;
+}
+.search_hotel_item button{
+	background-color:#ffffff;
+	border:none;
+	color:#a9a9a9;
+}
+.number_persons button:hover,
+.number_persons button:focus{
+	color:#000000;
+}
+.number_persons button:active{
+	color:#81b3d2;
+}
+.search_hotel_form .button,
+.main_footer .social_button{
+	font: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color:#ffffff;
+	text-align:center;
+	background-color:#81b3d2;
+	text-transform: uppercase;
+	border: none;
+}
+.search_hotel_form .button:hover,
+.main_footer .social_button:hover,
+.catalog_item .detailed:hover,
+.search_hotel_form .button:focus,
+.main_footer .social_button:focus,
+.catalog_item .detailed:focus{
+	background-color:#669ec0;
+}
+.search_hotel_form .button:active,
+.main_footer .social_button:active,
+.catalog_item .detailed:active{
+	background-color:#5496bd;
+	color:rgba(255, 255, 255, 0.5);
+}
+.filters{
+	height:273px;
+	background-image: url("../img/img_filtr.jpg");		
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.found{
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color:#000000;
+}
+.catalog_item .button{
+	font-weight: 700;
+	color:#ffffff;
+}
+.catalog_item .detailed{
+	background-color:#81b3d2;
+}
+.hotel_info .book{
+	background-color:#766357;
+}
+.hotel_rating_text{
+	color:#666666;
+}
+.filter_button,
+.filter_price{
+	background:transparent;
+	border:2px solid #ffffff;
+	color:#ffffff;
+}
+.filters{
+	width:1200px;
+	color:#ffffff;
+}
+.filters legend{
+	font-size:16px;
+	font-weight: 700;
+}
+.filters fieldset{
+	border:none;
+}
+.filters fieldset:first-child, .filters fieldset:nth-child(2){
+	float:left;
+}
