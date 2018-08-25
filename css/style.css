@@ -1,3 +1,11 @@
+html{
+	box-sizing:border-box;
+}
+*,
+*::after,
+*::before{
+	box-sizing:inherit;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -20,11 +28,18 @@ a {
 	font-weight: 700;
 }
 
-.container_index{
+.welcom{
 	background-image: url("../img/big_img_sedona.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size:100% 510px;
+}
+.welcom_text{
+	height:510px;
+	background-image: url("../img/intro-welcome.svg");		
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 460px auto;
 }
 .gray_block{
 	background-color:#eeeeee;
@@ -74,13 +89,7 @@ a {
 	color:#000000;
 	border:none;
 }
-.welcom{
-	height:510px;
-	background-image: url("../img/intro-welcome.svg");		
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: auto 353px;
-}
+
 .head_reason{
 	line-height: 26px;
 	text-align:center;
@@ -237,4 +246,161 @@ a {
 }
 .filters fieldset{
 	border:none;
+}
+
+.main_header, .container{
+	max-width:1200px;
+	background-color:#ffffff;
+	margin:0 auto;
+}
+.main_navigation{
+	display:flex;
+	flex-direction:column;
+}
+.site_navigation{
+	margin:0 72px;
+	padding:0;
+	height:56px;
+	display:flex;
+	justify-content: space-between;
+	margin-top:-78px;	
+}
+.site_navigation li{
+	align-self:center;
+}
+.site_navigation li:nth-child(2){
+	margin-right:190px;
+}
+.main_header_logo{
+	align-self:center;
+}
+.reason_list{
+	padding:0;
+}
+.reason_item_motive{
+	height:256px;
+	display:flex;	
+	align-items:stretch;
+}
+.motive_image{
+	padding:0;
+	margin:0;
+}
+.motive_reverse{
+	flex-direction: row-reverse;
+}
+.infrastructure{
+	padding:0;
+	display:flex;
+	height:330px;
+	align-items:center;
+}
+.gray_block{
+	padding:0;
+	display:flex;
+	height:256px;
+	align-items:center;
+}
+.feature{
+	padding:0 40px;	
+}
+.hotel_search{
+	width:568px;
+	margin:0 auto;
+}
+.modal_close{
+	width: 568px;
+	height: 86px;	
+}
+.search_hotel_form{
+	width: 568px;
+	height: 395px;
+	padding:55px;
+}
+.search_hotel_form .button{
+	width:458px;
+	height:58px;
+}
+.main_footer{
+	display:flex;
+	max-width:1200px;
+	margin:0 auto;
+	justify-content:space-around;
+}
+.footer_social{
+	padding:0;
+	display:flex;
+}
+.social_button{
+	margin:0 5px;
+}
+.filters,
+.sort{
+	padding: 0 72px;
+}
+.filter{
+	display:flex;
+	padding: 30px 0;
+}
+.filter ul,
+.catalog_list{
+	padding:0;
+	margin:0;
+}
+.filter fieldset{
+	padding:0;
+	margin:0;
+}
+.filter fieldset:first-child{
+	margin-right:110px;
+}
+.filter .price_per_day{
+	margin-right:0;
+	margin-left:auto;
+}
+.sort{
+	display:flex;
+	align-items: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+.found{
+	margin-right:45px;
+}
+.sort_type .text_low{
+	margin-right:35px;
+}
+.sort_type .text_sort{
+	margin-right:30px;
+}
+.sorter,
+.hotel_rating{
+	margin-right:0;
+	margin-left:auto;
+}
+.hotel_name,
+.hotel_info{
+	margin:0;
+}
+.catalog_item{
+	display:flex;
+	padding: 30px 72px;
+	border-bottom: 1px solid #e5e5e5;
+	height:150px;
+}
+.hotel_info_img{
+	margin-right:30px;
+}
+.holel_brief_info .button{
+	padding: 3px 15px;
+}
+.holel_brief_info{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.hotel_name{
+	font-size: 21px;
+}
+.catalog_item .hotel_type{
+	margin-right:35px;
 }
