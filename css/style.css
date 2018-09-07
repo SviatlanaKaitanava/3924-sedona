@@ -621,7 +621,7 @@ a{
 	width: 164px;
 }
 .sort_type .text_low{
-	margin-right: 27px;
+	margin-right: 36px;
 }
 .sort_type .text_sort{
 	margin-right: 30px;
@@ -848,7 +848,7 @@ a{
 .filter_price_to{
 	position: absolute;
 	top: 50%;
-	left: 65%;
+	left: 67%;
 	margin-top: -13px;
 }
 .filter_price input{
