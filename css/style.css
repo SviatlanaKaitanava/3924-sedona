@@ -37,7 +37,7 @@ a{
 	background-size: 460px auto, 100% auto;
 }
 .welcom::after{
-	content: '';
+	content:"";
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -86,7 +86,7 @@ a{
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #81b3d2;
 }
-.sort_type a:first-of-type{
+.text_sort.active{
 	color: #81b3d2;
 	border: none;
 }
@@ -148,7 +148,7 @@ a{
 	padding: 45px 40px 61px 40px;
 }
 .reason_item_motive::after{
-	content: '';
+	content:"";
 	display: block;
 	width: 66.666666%;
 	background-image: url("../img/img_city.jpg");
@@ -159,7 +159,7 @@ a{
 	padding: 0;
 }
 .motive_reverse::after{
-	content: '';
+	content:"";
 	width: 66.666666%;
 	background-image: url("../img/img_diablo_bridge.jpg");
 	background-size: 100%, auto;
@@ -667,8 +667,10 @@ a{
 	padding: 1px 0 0 0;
 }
 .hotel_name{
-	font-size: 21px;
-	margin-bottom: -6px;
+	font-size: 21px;	
+	line-height: 26px;
+	margin-bottom: -7px;
+	margin-top: -2px;
 }
 .catalog_item .hotel_type{
 	width: 110px;
@@ -678,7 +680,7 @@ a{
 	position: relative;
 }
 .infrastructure_feature .text_big::before{
-	content: '';
+	content:"";
 	position: absolute;
 	left: 50%;
 	width: 75px;
@@ -789,7 +791,7 @@ a{
 	padding-left: 40px;
 }
 .filter-option label::before{
-	content: '';
+	content:"";
 	position: absolute;
 	left: 0;
 	background-image: url("../img/checkbox-off.svg");
@@ -797,9 +799,15 @@ a{
 	width: 26px;
 	height: 23px;
 }
-.filter_input_checkbox:checked + label::before{
+.filter_input_checkbox:checked +label::before{
 	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
+}
+.filter_input_checkbox:disabled +label::before{
+	background-image: url("../img/checkbox-off-disabled.svg");
+}
+.filter_input_checkbox:checked:disabled +label::before{
+	background-image: url("../img/checkbox-on-disabled.svg");
 }
 .price_per_day{
 	position: relative;
@@ -815,7 +823,7 @@ a{
 	margin-bottom: 20px;
 }
 .filter_price::after {
-	content: '';
+	content:"";
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -883,6 +891,7 @@ a{
 .range_toggle:hover{
 	width: 22px;
 	height: 22px;
+	top: -10px;
 }
 .range_toggle_min{
 	left: 0;
